@@ -26,6 +26,11 @@ Three questions this data could answer:
 2. When did a specific DC Comics character first appear?
 3. Which DC Comics characters have a secret identity?
 
+## Links
+
+- Live: https://helloimshanae.github.io/capstone/
+- Repo: https://github.com/helloimshanae/capstone
+
 ## Team
 
 Accountability partner:
