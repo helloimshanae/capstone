@@ -8,20 +8,27 @@ async function loadRecords(limit) {
   let data = await response.json();
   let records = data.records;
   console.log("Records: " + records.length);
+  
+  if (records.length === 0) {
+  document.getElementById("results-list").textContent = "Nothing matched.";
+  return;
+}
 
+if (response.status === 200) {
   let text = "";
 
   records.forEach(function (record) {
     text = text + "<article>";
-	text = text + "<h3>" + record.Name + "</h3>";
-	text = text + "<p><b>APPEARANCES:</b> " + record["APPEARANCES"] + "</p>";
-	text = text + "<p><b>FIRST APPEARANCE:</b> " + record["FIRST APPEARANCE"] + "</p>";
-	text = text + "<p><b>HAIR COLOR:</b> " + record["HAIR"] + "</p>";
-	text = text + "<p><b>EYE COLOR:</b> " + record["EYE"] + "</p>"
-	text = text + "</article>";
+    text = text + "<h3>" + record.Name + "</h3>";
+    text = text + "<p><b>APPEARANCES:</b> " + record["APPEARANCES"] + "</p>";
+    text = text + "<p><b>FIRST APPEARANCE:</b> " + record["FIRST APPEARANCE"] + "</p>";
+    text = text + "</article>";
   });
 
   document.getElementById("results-list").innerHTML = text;
+} else {
+  document.getElementById("results-list").textContent = "That request did not work. Status: " + response.status;
+}
 }
 
 goButton.addEventListener("click", function () {
