@@ -1,23 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <!-- PAGE INFORMATION -->
-  <!-- CHARACTER SETTING -->
+    <!-- PAGE INFORMATION -->
+    <!-- CHARACTER SETTING -->
     <meta charset="utf-8">
-  <!-- MOBILE FRIENDLY -->
+
+    <!-- MOBILE FRIENDLY -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- PAGE TITLE -->
+
+    <!-- PAGE TITLE -->
     <title>DC Comics Characters</title>
-  <!-- PAGE STYLING -->
+
+    <!-- PAGE STYLING -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.classless.min.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  
+
   <body>
-   
-    <main>
-  <!-- MAIN HEADING -->
-      <h1>DC Comics Characters</h1>
+
+    <main class="container">
+
+      <!-- NAVIGATION -->
+      <nav>
+        <ul>
+          <li><strong>DC Comics Characters</strong></li>
+        </ul>
+
+        <ul>
+          <li><a href="#search">Search</a></li>
+          <li><a href="#results">Results</a></li>
+          <li><a href="#about">About the Data</a></li>
+        </ul>
+      </nav>
+
+      <!-- HERO -->
+      <div class="hero">
+        <h1>DC Comics Characters</h1>
+        <p>
+          A DC Comics fan needs to find information about characters
+          because they want to learn more about them.
+        </p>
+      </div>
+
+      <!-- SEARCH SECTION -->
+      <section id="search">
+        <h2>Search</h2>
+        <p>Find a DC Comics character.</p>
+		
+		<input id="character-search" type="text" placeholder="Search for a character">
+        <button id="search-button" type="button">Search</button>
+      </section>
+
+      <!-- RESULTS SECTION -->
+      <section id="results">
+        <h2>Results</h2>
+        <p>Matching characters will appear here.</p>
+      </section>
+
+      <!-- ABOUT THE DATA SECTION -->
+      <section id="about">
+        <h2>About the Data</h2>
+        <p>Learn about the DC Comics character data.</p>
+      </section>
+
     </main>
-  
+
   </body>
 </html>
