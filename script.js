@@ -8,11 +8,10 @@ async function loadRecords() {
   let data = await response.json();
   let records = data.records;
   console.log("Records: " + records.length);
-  
-  let record = records[0];
 
-  document.getElementById("results-list").textContent = "CHARACTER NAME: " + record.Name;
-  document.getElementById("results-detail").textContent = "APPEARANCES: " + record["APPEARANCES"];
+document.getElementById("result-1").innerHTML = "NAME: " + records[0].Name + "<br>APPEARANCES: " + records[0]["APPEARANCES"];
+document.getElementById("result-2").innerHTML = "NAME: " + records[1].Name + "<br>APPEARANCES: " + records[1]["APPEARANCES"];
+document.getElementById("result-3").innerHTML = "NAME: " + records[2].Name + "<br>APPEARANCES: " + records[2]["APPEARANCES"];
 }
 
 goButton.addEventListener("click", function () {
