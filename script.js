@@ -12,7 +12,13 @@ async function loadRecords(limit) {
   let text = "";
 
   records.forEach(function (record) {
-    text = text + "<b>NAME:</b> " + record.Name + "<br><b>APPEARANCES:</b> " + record["APPEARANCES"] + "<br><b>FIRST APPEARANCE:</b> " + record["FIRST APPEARANCE"] + "<br><br>";
+    text = text + "<article>";
+	text = text + "<h3>" + record.Name + "</h3>";
+	text = text + "<p><b>APPEARANCES:</b> " + record["APPEARANCES"] + "</p>";
+	text = text + "<p><b>FIRST APPEARANCE:</b> " + record["FIRST APPEARANCE"] + "</p>";
+	text = text + "<p><b>HAIR COLOR:</b> " + record["HAIR"] + "</p>";
+	text = text + "<p><b>EYE COLOR:</b> " + record["EYE"] + "</p>"
+	text = text + "</article>";
   });
 
   document.getElementById("results-list").innerHTML = text;
