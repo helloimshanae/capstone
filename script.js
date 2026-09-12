@@ -12,7 +12,7 @@ async function loadRecords() {
   let text = "";
 
   records.forEach(function (record) {
-    text = text + "• NAME: " + record.Name + "<br>APPEARANCES: " + record["APPEARANCES"] + "<br><br>";
+    text = text + "<b>NAME:</b> " + record.Name + "<br><b>APPEARANCES:</b> " + record["APPEARANCES"] + "<br><b>FIRST APPEARANCE:</b> " + record["FIRST APPEARANCE"] + "<br><br>";
   });
 
   document.getElementById("results-list").innerHTML = text;
