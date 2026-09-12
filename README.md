@@ -4,6 +4,24 @@ DC-Comics-Characters
 
 A DC Comics fan needs to find information about characters because they want to learn more about them. My page will let them search for a character and see basic information.
 
+## The plan
+
+![My wireframe](wireframe.png)
+
+### Sections
+
+- **Search** — where visitors search for a DC Comics character.
+- **Results** — where matching characters are displayed.
+- **About the Data** — basic information about the DC Comics dataset.
+
+### User input
+
+- A visitor types a character name and the page shows matching characters.
+- A visitor clicks 5, 10 or 20 and the page shows that many characters.
+
+### Outputs
+
+Each result shows `Name`, `APPEARANCES` and `FIRST APPEARANCE`.
 
 ## Data
 
