@@ -18,11 +18,18 @@ if (response.status === 200) {
   let text = "";
 
   records.forEach(function (record) {
-    text = text + "<article>";
-    text = text + "<h3>" + record.Name + "</h3>";
-    text = text + "<p><b>APPEARANCES:</b> " + record["APPEARANCES"] + "</p>";
-    text = text + "<p><b>FIRST APPEARANCE:</b> " + record["FIRST APPEARANCE"] + "</p>";
-    text = text + "</article>";
+	text = text + "<article>";
+	text = text + "<h3>NAME:</h3>";
+	text = text + "<p>" + record.Name + "</p>";
+	text = text + "<h3>HAIR COLOR:</h3>";
+	text = text + "<p>" + record.HAIR + "</p>";
+	text = text + "<h3>EYE COLOR:</h3>";
+	text = text + "<p>" + record.EYE + "</p>";
+	text = text + "<h3>FIRST APPEARANCE:</h3>";
+	text = text + "<p>" + record["FIRST APPEARANCE"] + "</p>";
+	text = text + "<h3>TOTAL APPEARANCES:</h3>";
+	text = text + "<p>" + record["APPEARANCES"] + "</p>";
+	text = text + "</article>";
   });
 
   document.getElementById("results-list").innerHTML = text;

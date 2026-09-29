@@ -6,7 +6,7 @@ A DC Comics fan needs to find information about characters because they want to 
 
 ## The plan
 
-![My wireframe](wireframe.png)
+![My wireframe](images/wireframe.png)
 
 ### Sections
 
